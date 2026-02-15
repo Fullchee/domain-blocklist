@@ -7,9 +7,7 @@
 #   just apply-hosts -> copy /etc/hosts.new -> /etc/hosts (requires sudo)
 # Requires: curl, jq
 
-all:  # default task (run with `just`)
-    update-keiyoushi
-    combine
+all: update-keiyoushi combine
 
 update-keiyoushi:
     @echo "Fetching keiyoushi domains → blocklists/keiyoushi-domains.txt"
