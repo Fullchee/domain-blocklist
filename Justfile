@@ -7,6 +7,9 @@
 #   just apply-hosts -> copy /etc/hosts.new -> /etc/hosts (requires sudo)
 # Requires: curl, jq
 
+setup:
+    prek install
+
 all: update-keiyoushi combine update-hosts
 
 update-keiyoushi:
