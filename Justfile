@@ -8,8 +8,8 @@
 # Requires: curl, jq
 
 all:  # default task (run with `just`)
-	update-keiyoushi
-	combine
+    update-keiyoushi
+    combine
 
 update-keiyoushi:
     @echo "Fetching keiyoushi domains → blocklists/keiyoushi-domains.txt"
@@ -25,15 +25,17 @@ update-keiyoushi:
             | unique \
             | .[]' > blocklists/keiyoushi-domains.txt
     @echo "Updated keiyoushi-domains.txt! ✅"
+
+
 combine:
-	@echo "Combining all blocklists → blocklists/combined_domains.txt"
-	mkdir -p blocklists
-	# Concatenate all .txt in blocklists/ except the combined output, then sort-unique
-	rm -f blocklists/combined_domains.txt
-	for f in blocklists/*.txt; do \
-		[ "$(basename "$f")" = "combined_domains.txt" ] && continue; \
-		cat "$f"; \
-	done | sort -u > blocklists/combined_domains.txt
+    @echo "Combining all blocklists → blocklists/combined_domains.txt"
+    mkdir -p blocklists
+    rm -f blocklists/combined_domains.txt
+    for f in blocklists/*.txt; do \
+        [ "$(basename "$f")" = "combined_domains.txt" ] && continue; \
+        cat "$f"; \
+    done | sort -u > blocklists/combined_domains.txt
+    @echo "Combined all blocklists → blocklists/combined_domains.txt ✅"
 
 # hosts:
 # 	@echo "Generating /etc/hosts.new from blocklists/combined_domains.txt (sudo required)"
