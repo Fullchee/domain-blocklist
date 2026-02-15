@@ -21,7 +21,8 @@ update-keiyoushi:
             | map(gsub("^www\\."; "")) \
             | map(gsub("#$"; "")) \
             | unique \
-            | .[]' > blocklists/keiyoushi-domains.txt
+            | .[]' \
+        | grep -v "^127\.0\.0\.1" > blocklists/keiyoushi-domains.txt
     @echo "Updated keiyoushi-domains.txt! ✅"
 
 
