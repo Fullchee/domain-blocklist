@@ -7,10 +7,11 @@
 #   just apply-hosts -> copy /etc/hosts.new -> /etc/hosts (requires sudo)
 # Requires: curl, jq
 
+all: update-keiyoushi combine update-hosts
+
 setup:
     prek install
 
-all: update-keiyoushi combine update-hosts
 
 update-keiyoushi:
     @echo "Fetching keiyoushi domains → blocklists/keiyoushi-domains.txt"
