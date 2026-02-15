@@ -3,7 +3,11 @@
 ## Setup
 
 1. Install `just`
-
+   1. `brew install just`
+2. Install `prek`
+   1. `brew install prek`
+3. Enable pre-commit hooks (prek)
+   1. `prek install` — repository-local hook runs `just` when files under `blocklists/` change (hook id: `just-blocklists`). To skip the hook for a commit: `SKIP=just-blocklists git commit -m "..."` or `git commit --no-verify`.
 
 ## Blocklists
 
