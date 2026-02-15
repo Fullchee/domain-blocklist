@@ -24,6 +24,7 @@ update-keiyoushi:
             | map(gsub("#$"; "")) \
             | unique \
             | .[]' > blocklists/keiyoushi-domains.txt
+    @echo "Updated keiyoushi-domains.txt! ✅"
 combine:
 	@echo "Combining all blocklists → blocklists/combined_domains.txt"
 	mkdir -p blocklists

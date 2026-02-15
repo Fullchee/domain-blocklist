@@ -1,5 +1,9 @@
 # Domain blocklists
 
+## Setup
+
+1. Install `just`
+
 
 ## Blocklists
 
