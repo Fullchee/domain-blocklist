@@ -1,0 +1,19 @@
+{
+  "policies": {
+    "BlockAboutAddons": true,
+    "BlockAboutConfig": true,
+    "BlockAboutProfiles": true,
+    "DisableFeedbackCommands": true,
+    "DisableFirefoxScreenshots": true,
+    "DisablePrivateBrowsing": true,
+    "DisableProfileRefresh": true,
+    "DisableSafeMode": true,
+    "Extensions": {
+      "Locked": [
+        "leechblockng@proginosko.com",
+        "uBlock0@raymondhill.net",
+        "admin@2fas.com"
+      ]
+    }
+  }
+}

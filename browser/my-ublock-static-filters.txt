@@ -1,0 +1,113 @@
+! 2021-03-24 https://open.spotify.com
+open.spotify.com##.contentSpacing._1e2c9475b784ca8301a6ae4df3834372-scss
+
+! 2021-05-21 https://outlook.live.com
+outlook.live.com##._1xCBLVKl1qp6BB2jT7GN5b > ._3_hHr3kfEhbNYRFM5YJxH9
+
+! 2021-05-21 https://stackoverflow.com
+stackoverflow.com##.tex2jax_ignore.module
+
+! 2021-12-17 https://open.spotify.com
+open.spotify.com##.contentSpacing.oIwmmWjK6Y3CrlINoPkD
+open.spotify.com##.soGhxDX6VjS7dBxX9Hbd.pIrKWN4YDKYTiwCC7y14.iKwGKEfAfW7Rkx2_Ba4E
+open.spotify.com##.BtbiwMynlB4flsYu_hA2.Z4InHgCs2uhk0MU93y_a.iKwGKEfAfW7Rkx2_Ba4E
+
+! 2022-07-01 https://outlook.live.com
+outlook.live.com##.AK_my > .pBKjV > .PQ3t8
+outlook.live.com##.AK_my > .pBKjV
+
+! 2023-04-18 https://www.theweathernetwork.com
+www.theweathernetwork.com##.bwilSs.sc-gswNZR
+www.theweathernetwork.com##.dCTGXu.sc-iveFHk
+www.theweathernetwork.com##.o-side_content
+www.theweathernetwork.com###leaderboard
+www.theweathernetwork.com##.nav-links
+www.theweathernetwork.com###menu_search
+www.theweathernetwork.com###hourlyforecast_nitro ~ div
+
+! 2023-05-01 https://www.theweathernetwork.com
+www.theweathernetwork.com###twnmm-video-player
+www.theweathernetwork.com###video_player_pip_jw_wrapper
+
+! 2023-05-26 https://www.youtube.com
+youtube.com##tp-yt-app-drawer
+youtube.com##ytd-mini-guide-renderer
+youtube.com##ytd-feed-nudge-renderer
+youtube.com##.ytd-notification-topbar-button-renderer
+youtube.com##.ytd-comments
+youtube.com##.yt-chip-cloud-renderer
+www.youtube.com##.ytp-endscreen-content
+youtube.com##.ytd-banner-promo-renderer
+youtube.com##.ytp-pause-overlay
+youtube.com##.ytp-title-fullerscreen-link
+youtube.com##.ytp-title-channel
+youtube.com##.ytp-title-text
+youtube.com##.ytp-chrome-top-buttons
+youtube.com##.ytp-show-tiles
+
+reddit.com##[aria-label="Home"]
+reddit.com##[data-testid="frontpage-sidebar"]
+reddit.com##reddit-sidebar-nav
+reddit.com###right-sidebar-container
+reddit.com##shreddit-gallery-carousel
+reddit.com##shreddit-feed
+
+
+tkdodo.eu##header
+tkdodo.eu##.gatsby-resp-image-wrapper
+tkdodo.eu##.gatsby-resp-image-wrapper + div
+tkdodo.eu##footer
+tkdodo.eu##giscus-widget
+tkdodo.eu##a[href="https://query.gg/?r=dom"]
+! table of contents
+tkdodo.eu##.css-1vvagf7
+
+! 2024-01-09 https://tkdodo.eu
+tkdodo.eu##.css-qx0lza
+tkdodo.eu##.css-cdlqgd
+
+! 2024-01-09 https://tanstack.com
+tanstack.com##.justify-between.items-center.gap-2.flex.p-4
+tanstack.com##.dark\:border-0.shadow-md.rounded-t-md.px-2.p-1.hover\:text-white.hover\:bg-rose-600.border-gray-100.border.dark\:bg-gray-800.bg-white.text-xs.-rotate-90.origin-bottom-right
+tanstack.com##.gap-4.justify-center.flex.p-4
+
+! 2024-01-10 https://www.swyx.io
+www.swyx.io##main.sm\:px-8.dark\:bg-gray-900.px-4.bg-gray-50.justify-center.flex-col.flex > .mx-auto.max-w-2xl
+www.swyx.io##.justify-center.items-start.flex-col.max-w-2xl.w-full.flex.mb-8.mx-auto
+www.swyx.io##.backdrop-blur.p-2.hover\:bg-white\/30.bg-white\/25.rounded-xl.max-w-\[12em\].bottom-1.right-4.fixed
+www.swyx.io##div.sm\:px-8.dark\:bg-gray-900.px-4.bg-gray-50.justify-center.flex-col.flex
+
+! 2024-02-03 https://dev.to
+dev.to##.crayons-article-actions__inner
+dev.to##[aria-label="Author details"]
+
+
+! 2023-06-10 https://www.youtube.com
+www.youtube.com###movie_player > .ytp-chrome-bottom > .ytp-chrome-controls > .ytp-left-controls > .ytp-button.ytp-next-button
+www.youtube.com##.ytd-comments
+www.youtube.com###show-hide-button
+www.youtube.com##.yt-chip-cloud-renderer
+www.youtube.com##.ytd-watch-next-secondary-results-renderer
+
+! 2023-12-29 https://leetcode.com
+leetcode.com##nav
+leetcode.com##div.ssg__qd-console-position--right
+leetcode.com##.rounded.justify-center.items-center.cursor-pointer.w-8.h-10.flex.top-\[215px\].right-0.fixed.dark\:bg-dark-gray-5.z-base-1.bg-gray-5.dark\:text-dark-label-r.text-label-r
+leetcode.com##.z-overlay.absolute:has([href="https://leetcode.com/discuss/general-discussion/2238519/Share-your-feedback-to-the-new-question-detail-page"])
+leetcode.com##nav
+leetcode.com##.px-4.border-b.rounded-t.justify-between.items-center.w-full.h-9.flex.dark\:border-dark-fill-3.border-fill-3.dark\:bg-dark-layer-2.bg-layer-2
+leetcode.com##.border-b.rounded-t.dark\:border-dark-fill-3.border-fill-3.dark\:bg-dark-layer-2.bg-layer-2.pr-4.items-center.h-9.flex
+leetcode.com##.py-2.px-3.justify-between.items-center.h-9.flex
+leetcode.com##.space-x-4.items-center.flex.mt-3
+leetcode.com##.pt-3.px-5 > .relative
+leetcode.com###headlessui-popover-button-\:r7\: > div > .dark\:hover\:bg-dark-fill-3.hover\:bg-fill-3.transition-colors.p-\[3px\].rounded.cursor-pointer.dark\:text-dark-gray-6.text-gray-6
+leetcode.com##.pt-\[38px\].py-3.px-5
+leetcode.com##div.py-3.px-5
+leetcode.com##.py-3.px-0
+leetcode.com##.pt-8.pb-2\.5.px-5.mt-auto
+leetcode.com##hr.mx-5.dark\:border-dark-divider-3.border-divider-3
+
+! 2024-04-17 https://www.theweathernetwork.com
+www.theweathernetwork.com##.taskbar
+www.theweathernetwork.com###sidebar
+www.theweathernetwork.com##twnmm-article-list-webcomponent
