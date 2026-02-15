@@ -1,20 +1,5 @@
 [[repos]]
-repo = "https://github.com/pre-commit/pre-commit-hooks"
-rev = "v6.0.0"
-hooks = [
-  { id = "check-yaml" },
-  { id = "end-of-file-fixer" },
-]
-
-[[repos]]
 repo = "local"
 hooks = [
-  {
-    id = "just-blocklists",
-    name = "Run just (blocklists)",
-    entry = "just",
-    language = "unsupported",
-    pass_filenames = false,
-    files = "^blocklists/"
-  },
+  { id = "just-blocklists", name = "Run just (blocklists)", entry = "just", language = "system", pass_filenames = false, files = "^blocklists/" },
 ]
