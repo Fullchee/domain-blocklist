@@ -7,7 +7,7 @@
 #   just apply-hosts -> copy /etc/hosts.new -> /etc/hosts (requires sudo)
 # Requires: curl, jq
 
-all: update-keiyoushi combine
+all: update-keiyoushi combine update-hosts
 
 update-keiyoushi:
     @echo "Fetching keiyoushi domains → blocklists/keiyoushi-domains.txt"
@@ -35,26 +35,11 @@ combine:
     done | sort -u > blocklists/combined_domains.txt
     @echo "Combined all blocklists → blocklists/combined_domains.txt ✅"
 
-# hosts:
-# 	@echo "Generating /etc/hosts.new from blocklists/combined_domains.txt (sudo required)"
-# 	(
-# 	cat <<'EOF'
-# 127.0.0.1   localhost
-# 255.255.255.255 broadcasthost
-# ::1             localhost
-
-# # Custom blocklist below
-# EOF
-# 	awk '{print "0.0.0.0", $0}' blocklists/combined_domains.txt
-# 	) | sudo tee /etc/hosts.new > /dev/null
-
-# apply-hosts:
-# 	@echo "Copying /etc/hosts.new → /etc/hosts (sudo required)"
-# 	sudo cp /etc/hosts.new /etc/hosts
-
-# clean:
-# 	rm -f blocklists/keiyoushi-domains.txt blocklists/combined_domains.txt
-
-# show:
-# 	@echo "Preview (first 50 lines) of blocklists/combined_domains.txt"
-# 	head -n 50 blocklists/combined_domains.txt || true
+update-hosts:
+    @echo "Generating blocklists/hosts from blocklists/combined_domains.txt"
+    mkdir -p blocklists
+    if [ ! -s blocklists/combined_domains.txt ]; then \
+        echo "blocklists/combined_domains.txt is missing or empty — run 'just combine' first"; exit 1; \
+    fi
+    awk '{print "0.0.0.0", $0}' blocklists/combined_domains.txt > blocklists/hosts
+    @echo "Wrote blocklists/hosts ✅"
