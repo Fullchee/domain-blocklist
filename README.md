@@ -24,19 +24,20 @@ flowchart TD
   Internet([Internet])
 
   subgraph blocklists["blocklists/"]
-    FB["fullchee-blocklist.txt"]
-    KD["keiyoushi-domains.txt"]
-    GL["games.txt"]
-    CD["combined-domains.txt"]
-    LB["leechblock.txt"]
-    HS["hosts"]
+    Fullchee["fullchee-blocklist.txt"]
+    Keiyoushi["keiyoushi-domains.txt"]
+    Games["games.txt"]
+    Combined["combined-domains.txt"]
+    Leechblock["leechblock.txt"]
+    Hosts["hosts"]
   end
 
-  Internet --> KD
-  FB --> CD
-  KD --> CD
-  GL --> CD
-  CD -->|update-leechblock| LB
-  CD -->|update-repo-hosts-file| HS
-  HS -->|copied to| ETC["/etc/hosts (system)"]
+  Internet --> Keiyoushi
+  Internet --> Games
+  Fullchee --> Combined
+  Keiyoushi --> Combined
+  Games --> Combined
+  Combined -->|update-leechblock| Leechblock
+  Combined -->|update-repo-hosts-file| Hosts
+  Hosts -->|copied to| ETC["/etc/hosts (system)"]
 ```
