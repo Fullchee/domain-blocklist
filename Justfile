@@ -23,40 +23,37 @@ update-keiyoushi:
     @echo "Updated keiyoushi-domains.txt! ✅"
 
 combine:
-    @echo "Combining all blocklists → blocklists/combined_domains.txt"
+    @echo "Combining selected blocklists → blocklists/combined-domains.txt"
     mkdir -p blocklists
-    rm -f blocklists/combined_domains.txt
-    for f in blocklists/*.txt; do \
-        if [ "$(basename "$f")" != "combined_domains.txt" ]; then \
-            cat "$f"; \
-        fi; \
-    done | sort -u | sed '/./,$!d' > blocklists/combined_domains.txt
-    @echo "Combined all blocklists → blocklists/combined_domains.txt ✅"
+    rm -f blocklists/combined-domains.txt
+    cat blocklists/fullchee-blocklist.txt blocklists/keiyoushi-domains.txt \
+        | sort -u | sed '/./,$!d' > blocklists/combined-domains.txt
+    @echo "Combined selected blocklists → blocklists/combined-domains.txt ✅"
 
 update-leechblock:
-    @echo "Generating blocklists/leechblock.txt (sites1=) from blocklists/combined_domains.txt"
+    @echo "Generating blocklists/leechblock.txt (sites1=) from blocklists/combined-domains.txt"
     mkdir -p blocklists
-    if [ ! -s blocklists/combined_domains.txt ]; then \
-        echo "blocklists/combined_domains.txt is missing or empty — run 'just combine' first"; exit 1; \
+    if [ ! -s blocklists/combined-domains.txt ]; then \
+        echo "blocklists/combined-domains.txt is missing or empty — run 'just combine' first"; exit 1; \
     fi
     if [ ! -f blocklists/leechblock.txt ]; then \
         echo "blocklists/leechblock.txt not found — creating a template"; \
         printf 'setName1=\nsites1=\n' > blocklists/leechblock.txt; \
     fi
 
-    # Build a single space-separated domain string from combined_domains.txt and replace the first `sites1=` (prefer line 2)
-    awk 'NR==FNR{ if($0!=""){ if(d=="") d=$0; else d=d " " $0 } next } { if (FNR==2 && /^sites1=/){ print "sites1=" d; next } if (/^sites1=/ && !repl){ print "sites1=" d; repl=1; next } print }' blocklists/combined_domains.txt blocklists/leechblock.txt > blocklists/leechblock.txt.tmp && mv blocklists/leechblock.txt.tmp blocklists/leechblock.txt
+    # Build a single space-separated domain string from combined-domains.txt and replace the first `sites1=` (prefer line 2)
+    awk 'NR==FNR{ if($0!=""){ if(d=="") d=$0; else d=d " " $0 } next } { if (FNR==2 && /^sites1=/){ print "sites1=" d; next } if (/^sites1=/ && !repl){ print "sites1=" d; repl=1; next } print }' blocklists/combined-domains.txt blocklists/leechblock.txt > blocklists/leechblock.txt.tmp && mv blocklists/leechblock.txt.tmp blocklists/leechblock.txt
     @echo "Updated blocklists/leechblock.txt ✅"
 
 update-hosts: update-repo-hosts-file update-mac-hosts-file
 
 update-repo-hosts-file:
-    @echo "Generating blocklists/hosts from blocklists/combined_domains.txt"
+    @echo "Generating blocklists/hosts from blocklists/combined-domains.txt"
     mkdir -p blocklists
-    if [ ! -s blocklists/combined_domains.txt ]; then \
-        echo "blocklists/combined_domains.txt is missing or empty — run 'just combine' first"; exit 1; \
+    if [ ! -s blocklists/combined-domains.txt ]; then \
+        echo "blocklists/combined-domains.txt is missing or empty — run 'just combine' first"; exit 1; \
     fi
-    awk '{print "0.0.0.0", $0}' blocklists/combined_domains.txt > blocklists/hosts
+    awk '{print "0.0.0.0", $0}' blocklists/combined-domains.txt > blocklists/hosts
     sudo cp blocklists/hosts /etc/hosts
     @echo "Wrote blocklists/hosts ✅"
 
@@ -70,7 +67,7 @@ update-mac-hosts-file:
     echo "" >> blocklists/hosts.tmp
 
     @# 2. Append the blocklist domains
-    awk '{print "0.0.0.0", $0}' blocklists/combined_domains.txt >> blocklists/hosts.tmp
+    awk '{print "0.0.0.0", $0}' blocklists/combined-domains.txt >> blocklists/hosts.tmp
 
     @# 3. Move to system (with backup)
     sudo rm -f /etc/hosts.bak
