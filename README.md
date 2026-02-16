@@ -9,8 +9,15 @@
 3. Enable pre-commit hooks (prek)
    1. `prek install` — repository-local hook runs `just` when files under `blocklists/` change (hook id: `just-blocklists`). To skip the hook for a commit: `SKIP=just-blocklists git commit -m "..."` or `git commit --no-verify`.
 
-## Files
+## Usage
 
+1. Update `fullchee-blocklist.txt`
+2. Commit the change (pre-commit: updates all the other files)
+3. Update the consumers of the blocklists
+   1. Pihole: update gravity, has the URL for `combined-domains.txt`
+   2.
+
+## Files
 
 ```mermaid
 flowchart TD
