@@ -63,10 +63,7 @@ update-repo-hosts-file:
         echo "blocklists/combined-domains.txt is missing or empty — run 'just combine' first"; exit 1; \
     fi
     awk '{print "0.0.0.0", $0}' blocklists/combined-domains.txt > blocklists/hosts
-    @echo "Copying blocklists/hosts to /etc/hosts: please enter your mac password"
-    sudo cp blocklists/hosts /etc/hosts
-    @echo "Wrote blocklists/hosts ✅"
-
+    @echo "Updated blocklists/hosts ✅"
 
 update-mac-hosts-file:
     @echo "Generating blocklists/hosts with system defaults..."
