@@ -26,6 +26,7 @@ flowchart TD
   subgraph blocklists["blocklists/"]
     FB["fullchee-blocklist.txt"]
     KD["keiyoushi-domains.txt"]
+    GL["games.txt"]
     CD["combined-domains.txt"]
     LB["leechblock.txt"]
     HS["hosts"]
@@ -34,6 +35,7 @@ flowchart TD
   Internet --> KD
   FB --> CD
   KD --> CD
+  GL --> CD
   CD -->|update-leechblock| LB
   CD -->|update-repo-hosts-file| HS
   HS -->|copied to| ETC["/etc/hosts (system)"]

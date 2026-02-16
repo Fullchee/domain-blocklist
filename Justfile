@@ -1,6 +1,6 @@
 all: ci update-mac-hosts-file
 
-ci: format-fullchee update-keiyoushi combine update-leechblock update-repo-hosts-file
+ci: format-fullchee update-keiyoushi update-games combine update-leechblock update-repo-hosts-file
 
 setup:
     brew install curl
@@ -33,11 +33,24 @@ update-keiyoushi:
         | grep -v "^127\.0\.0\.1" > blocklists/keiyoushi-domains.txt
     @echo "Updated keiyoushi-domains.txt! ✅"
 
+update-games:
+    @echo "Fetching AdGuard GameList → blocklists/games.txt"
+    mkdir -p blocklists
+    curl -sfL https://raw.githubusercontent.com/Mafraysse/AdGuard_GameList-Filter/refs/heads/main/Listing_raw.txt \
+        | sed 's/\r$//' \
+        | sed -E 's/^\s*#.*$//; /^\s*$/d' \
+        | sed -E 's/^\|\|?//; s/^\*\.//; s#^https?://##; s#/.*##; s/\^.*$//; s/\:.*$//; s/^\s*www\.//;' \
+        | grep -E '^[A-Za-z0-9._-]+\.[A-Za-z]{2,}' \
+        | sort -u > blocklists/games.txt
+    @echo "Updated blocklists/games.txt! ✅"
+
+
+
 combine:
     @echo "Combining selected blocklists → blocklists/combined-domains.txt"
     mkdir -p blocklists
     rm -f blocklists/combined-domains.txt
-    cat blocklists/fullchee-blocklist.txt blocklists/keiyoushi-domains.txt \
+    cat blocklists/fullchee-blocklist.txt blocklists/keiyoushi-domains.txt blocklists/games.txt \
         | sort -u | sed '/./,$!d' > blocklists/combined-domains.txt
     @echo "Combined selected blocklists → blocklists/combined-domains.txt ✅"
 
