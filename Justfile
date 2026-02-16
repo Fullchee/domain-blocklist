@@ -1,4 +1,4 @@
-all: update-keiyoushi combine update-hosts
+all: update-keiyoushi combine update-leechblock update-hosts
 
 setup:
     brew install curl
@@ -32,6 +32,21 @@ combine:
         fi; \
     done | sort -u | sed '/./,$!d' > blocklists/combined_domains.txt
     @echo "Combined all blocklists → blocklists/combined_domains.txt ✅"
+
+update-leechblock:
+    @echo "Generating blocklists/leechblock.txt (sites1=) from blocklists/combined_domains.txt"
+    mkdir -p blocklists
+    if [ ! -s blocklists/combined_domains.txt ]; then \
+        echo "blocklists/combined_domains.txt is missing or empty — run 'just combine' first"; exit 1; \
+    fi
+    if [ ! -f blocklists/leechblock.txt ]; then \
+        echo "blocklists/leechblock.txt not found — creating a template"; \
+        printf 'setName1=\nsites1=\n' > blocklists/leechblock.txt; \
+    fi
+
+    # Build a single space-separated domain string from combined_domains.txt and replace the first `sites1=` (prefer line 2)
+    awk 'NR==FNR{ if($0!=""){ if(d=="") d=$0; else d=d " " $0 } next } { if (FNR==2 && /^sites1=/){ print "sites1=" d; next } if (/^sites1=/ && !repl){ print "sites1=" d; repl=1; next } print }' blocklists/combined_domains.txt blocklists/leechblock.txt > blocklists/leechblock.txt.tmp && mv blocklists/leechblock.txt.tmp blocklists/leechblock.txt
+    @echo "Updated blocklists/leechblock.txt ✅"
 
 update-hosts: update-repo-hosts-file update-mac-hosts-file
 
