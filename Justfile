@@ -1,10 +1,20 @@
-all: update-keiyoushi combine update-leechblock update-hosts
+all: format-fullchee update-keiyoushi combine update-leechblock update-hosts
 
 setup:
     brew install curl
     brew install jq
     brew install prek
+    uv sync
     prek install
+
+# Clean, extract TLDs, sort, and unique the blocklist
+format-fullchee:
+    uv run python -c "import tldextract; [print(f'{e.domain}.{e.suffix}') for e in (tldextract.extract(line.strip()) for line in open('blocklists/fullchee-blocklist.txt')) if e.domain]" \
+    | sort -u \
+    | sed '/^$/d' > fullchee-blocklist.txt.tmp
+
+    # mv fullchee-blocklist.txt.tmp fullchee-blocklist.txt
+    @echo "blocklists/fullchee-blocklist.txt is now sorted, unique, and TLD-only. ✅"
 
 update-keiyoushi:
     @echo "Fetching keiyoushi domains → blocklists/keiyoushi-domains.txt"

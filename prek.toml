@@ -9,4 +9,12 @@ hooks = [
     pass_filenames = false,
     files = "^blocklists/",
   },
+  {
+    id = "just-format-fullchee",
+    name = "Format fullchee-blocklist",
+    entry = "just format-fullchee",
+    language = "system",
+    pass_filenames = false,
+    files = "^blocklists/fullchee-blocklist\\.txt$",
+  },
 ]
