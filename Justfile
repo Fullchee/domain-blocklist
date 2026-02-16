@@ -22,15 +22,15 @@ update-keiyoushi:
         | grep -v "^127\.0\.0\.1" > blocklists/keiyoushi-domains.txt
     @echo "Updated keiyoushi-domains.txt! ✅"
 
-
 combine:
     @echo "Combining all blocklists → blocklists/combined_domains.txt"
     mkdir -p blocklists
     rm -f blocklists/combined_domains.txt
     for f in blocklists/*.txt; do \
-        [ "$(basename "$f")" = "combined_domains.txt" ] && continue; \
-        cat "$f"; \
-    done | sort -u > blocklists/combined_domains.txt
+        if [ "$(basename "$f")" != "combined_domains.txt" ]; then \
+            cat "$f"; \
+        fi; \
+    done | sort -u | sed '/./,$!d' > blocklists/combined_domains.txt
     @echo "Combined all blocklists → blocklists/combined_domains.txt ✅"
 
 update-hosts: update-repo-hosts-file update-mac-hosts-file
