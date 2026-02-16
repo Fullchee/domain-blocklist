@@ -27,7 +27,7 @@ flowchart TD
     Fullchee["fullchee-blocklist.txt"]
     Keiyoushi["keiyoushi-domains.txt"]
     Games["games.txt"]
-    Combined["combined-domains.txt"]
+    Combined["combined-domains.txt (used by pihole)"]
     Leechblock["leechblock.txt"]
     Hosts["hosts"]
   end
