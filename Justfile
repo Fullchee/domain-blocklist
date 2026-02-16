@@ -1,4 +1,6 @@
-all: format-fullchee update-keiyoushi combine update-leechblock update-hosts
+all: ci update-mac-hosts-file
+
+ci: format-fullchee update-keiyoushi combine update-leechblock update-repo-hosts-file
 
 setup:
     brew install curl
@@ -7,13 +9,12 @@ setup:
     uv sync
     prek install
 
-# Clean, extract TLDs, sort, and unique the blocklist
 format-fullchee:
-    uv run python -c "import tldextract; [print(f'{e.domain}.{e.suffix}') for e in (tldextract.extract(line.strip()) for line in open('blocklists/fullchee-blocklist.txt')) if e.domain]" \
+    uv run python -c "import tldextract; [print(f'{e.subdomain + \".\" if e.subdomain and e.subdomain != \"www\" else \"\"}{e.domain}.{e.suffix}'.replace('www.', '')) for line in open('blocklists/fullchee-blocklist.txt') for e in [tldextract.extract(line.strip())] if e.domain]" \
     | sort -u \
-    | sed '/^$/d' > fullchee-blocklist.txt.tmp
+    | sed '/^$/d' > blocklists/fullchee-blocklist.txt.tmp
 
-    # mv fullchee-blocklist.txt.tmp fullchee-blocklist.txt
+    mv blocklists/fullchee-blocklist.txt.tmp blocklists/fullchee-blocklist.txt
     @echo "blocklists/fullchee-blocklist.txt is now sorted, unique, and TLD-only. ✅"
 
 update-keiyoushi:
@@ -55,8 +56,6 @@ update-leechblock:
     awk 'NR==FNR{ if($0!=""){ if(d=="") d=$0; else d=d " " $0 } next } { if (FNR==2 && /^sites1=/){ print "sites1=" d; next } if (/^sites1=/ && !repl){ print "sites1=" d; repl=1; next } print }' blocklists/combined-domains.txt blocklists/leechblock.txt > blocklists/leechblock.txt.tmp && mv blocklists/leechblock.txt.tmp blocklists/leechblock.txt
     @echo "Updated blocklists/leechblock.txt ✅"
 
-update-hosts: update-repo-hosts-file update-mac-hosts-file
-
 update-repo-hosts-file:
     @echo "Generating blocklists/hosts from blocklists/combined-domains.txt"
     mkdir -p blocklists
@@ -64,6 +63,7 @@ update-repo-hosts-file:
         echo "blocklists/combined-domains.txt is missing or empty — run 'just combine' first"; exit 1; \
     fi
     awk '{print "0.0.0.0", $0}' blocklists/combined-domains.txt > blocklists/hosts
+    @echo "Copying blocklists/hosts to /etc/hosts: please enter your mac password"
     sudo cp blocklists/hosts /etc/hosts
     @echo "Wrote blocklists/hosts ✅"
 
