@@ -2,7 +2,6 @@
 1punchman.com
 abyssreader.com
 after-manwha.com
-amazon.com
 anilist.co
 anime-planet.com
 animenewsnetwork.com
@@ -123,6 +122,7 @@ onepunchmanmangaa.com
 pluto-manga.com
 polygon.com
 punchmanmanga.com
+puzzle-battleships.com
 qqtoon.com
 ravenscans.com
 read-borutomanga.com
