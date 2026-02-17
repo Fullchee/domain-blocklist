@@ -36,12 +36,7 @@ update-keiyoushi:
 update-games:
     @echo "Fetching AdGuard GameList → blocklists/games.txt"
     mkdir -p blocklists
-    curl -sfL https://raw.githubusercontent.com/Mafraysse/AdGuard_GameList-Filter/refs/heads/main/Listing_raw.txt \
-        | sed 's/\r$//' \
-        | sed -E 's/^\s*#.*$//; /^\s*$/d' \
-        | sed -E 's/^\|\|?//; s/^\*\.//; s#^https?://##; s#/.*##; s/\^.*$//; s/\:.*$//; s/^\s*www\.//;' \
-        | grep -E '^[A-Za-z0-9._-]+\.[A-Za-z]{2,}' \
-        | sort -u > blocklists/games.txt
+    curl -sfL https://raw.githubusercontent.com/Mafraysse/AdGuard_GameList-Filter/refs/heads/main/Listing_raw.txt > blocklists/games.txt
     @echo "Updated blocklists/games.txt! ✅"
 
 
