@@ -1,4 +1,4 @@
-all: ci update-mac-hosts-file
+all: ci update-local-etc-hosts-file
 
 ci: format-fullchee update-keiyoushi update-games combine update-leechblock update-repo-hosts-file
 
@@ -78,7 +78,7 @@ update-repo-hosts-file:
     awk '{print "0.0.0.0", $0}' blocklists/combined-domains.txt > blocklists/hosts
     @echo "Updated blocklists/hosts ✅"
 
-update-mac-hosts-file:
+update-local-etc-hosts-file:
     @echo "Generating blocklists/hosts with system defaults..."
     @# 1. Create a temporary hosts file with defaults
     echo "127.0.0.1       localhost" > blocklists/hosts.tmp

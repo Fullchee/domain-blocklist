@@ -1,12 +1,10 @@
 [[repos]]
 repo = "local"
-hooks = [
-  {
-    id = "just-blocklists",
-    name = "Run just (blocklists)",
-    entry = "just ci",
-    language = "system",
-    pass_filenames = false,
-    files = "^blocklists/",
-  },
-]
+
+[[repos.hooks]]
+id = "just-blocklists"
+name = "Run just (blocklists)"
+entry = "just ci"
+language = "system"
+pass_filenames = false
+files = "^blocklists/"
