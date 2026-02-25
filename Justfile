@@ -14,8 +14,8 @@ setup:
 format-fullchee:
     uv run python -c "import tldextract; [print(f'{e.subdomain + \".\" if e.subdomain and e.subdomain != \"www\" else \"\"}{e.domain}.{e.suffix}'.replace('www.', '')) for line in open('blocklists/fullchee-blocklist.txt') for e in [tldextract.extract(line.strip())] if e.domain]" \
     | sort -u \
-    | sed '/^$/d' \
-    | sed 's|/.*||' > blocklists/fullchee-blocklist.txt.tmp
+    | sd '/^$/d' \
+    | sd 's|/.*||' > blocklists/fullchee-blocklist.txt.tmp
 
     mv blocklists/fullchee-blocklist.txt.tmp blocklists/fullchee-blocklist.txt
     @echo "blocklists/fullchee-blocklist.txt is now sorted, unique, and TLD-only. ✅"
@@ -34,14 +34,14 @@ update-keiyoushi:
             | unique \
             | .[]' \
         | grep -v "^127\.0\.0\.1" \
-        | sed 's|/.*||' > blocklists/keiyoushi-domains.txt
+        | sd 's|/.*||' > blocklists/keiyoushi-domains.txt
     @echo "Updated keiyoushi-domains.txt! ✅"
 
 update-games:
     @echo "Fetching AdGuard GameList → blocklists/games.txt"
     mkdir -p blocklists
     curl -sfL https://raw.githubusercontent.com/Mafraysse/AdGuard_GameList-Filter/refs/heads/main/Listing_raw.txt \
-        | sed 's|/.*||' \
+        | sd 's|/.*||' \
         | rg -v "google\.com" > blocklists/games.txt
     @echo "Updated blocklists/games.txt! ✅"
 
@@ -53,8 +53,8 @@ combine:
     rm -f blocklists/combined-domains.txt
     # strip URL paths (keep only the hostname) before deduping
     cat blocklists/fullchee-blocklist.txt blocklists/keiyoushi-domains.txt blocklists/games.txt \
-        | sed 's|^[[:space:]]*http[s]\?://||; s|/.*||' \
-        | sort -u | sed '/./,$!d' > blocklists/combined-domains.txt
+        | sd 's|^[[:space:]]*http[s]\?://||; s|/.*||' \
+        | sort -u | sd '/./,$!d' > blocklists/combined-domains.txt
     @echo "Combined selected blocklists → blocklists/combined-domains.txt ✅"
 
 update-leechblock:
