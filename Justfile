@@ -6,13 +6,16 @@ setup:
     brew install curl
     brew install jq
     brew install prek
+    brew install rg
+    brew install sd
     uv sync
     prek install
 
 format-fullchee:
     uv run python -c "import tldextract; [print(f'{e.subdomain + \".\" if e.subdomain and e.subdomain != \"www\" else \"\"}{e.domain}.{e.suffix}'.replace('www.', '')) for line in open('blocklists/fullchee-blocklist.txt') for e in [tldextract.extract(line.strip())] if e.domain]" \
     | sort -u \
-    | sed '/^$/d' > blocklists/fullchee-blocklist.txt.tmp
+    | sed '/^$/d' \
+    | sed 's|/.*||' > blocklists/fullchee-blocklist.txt.tmp
 
     mv blocklists/fullchee-blocklist.txt.tmp blocklists/fullchee-blocklist.txt
     @echo "blocklists/fullchee-blocklist.txt is now sorted, unique, and TLD-only. ✅"
@@ -30,13 +33,16 @@ update-keiyoushi:
             | map(gsub("#$"; "")) \
             | unique \
             | .[]' \
-        | grep -v "^127\.0\.0\.1" > blocklists/keiyoushi-domains.txt
+        | grep -v "^127\.0\.0\.1" \
+        | sed 's|/.*||' > blocklists/keiyoushi-domains.txt
     @echo "Updated keiyoushi-domains.txt! ✅"
 
 update-games:
     @echo "Fetching AdGuard GameList → blocklists/games.txt"
     mkdir -p blocklists
-    curl -sfL https://raw.githubusercontent.com/Mafraysse/AdGuard_GameList-Filter/refs/heads/main/Listing_raw.txt > blocklists/games.txt
+    curl -sfL https://raw.githubusercontent.com/Mafraysse/AdGuard_GameList-Filter/refs/heads/main/Listing_raw.txt \
+        | sed 's|/.*||' \
+        | rg -v "google\.com" > blocklists/games.txt
     @echo "Updated blocklists/games.txt! ✅"
 
 
@@ -45,7 +51,9 @@ combine:
     @echo "Combining selected blocklists → blocklists/combined-domains.txt"
     mkdir -p blocklists
     rm -f blocklists/combined-domains.txt
+    # strip URL paths (keep only the hostname) before deduping
     cat blocklists/fullchee-blocklist.txt blocklists/keiyoushi-domains.txt blocklists/games.txt \
+        | sed 's|^[[:space:]]*http[s]\?://||; s|/.*||' \
         | sort -u | sed '/./,$!d' > blocklists/combined-domains.txt
     @echo "Combined selected blocklists → blocklists/combined-domains.txt ✅"
 

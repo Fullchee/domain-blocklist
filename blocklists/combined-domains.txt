@@ -99,7 +99,6 @@
 1piecemanga.com
 1punchman.com
 1stgamez.com
-1stkissmanhua.net
 1stwebgames.com
 1t1t.com
 1up-games.com
@@ -405,7 +404,7 @@ agarioo.us
 agarioserver.xyz
 agarioservers.io
 agariousa.com
-agcscanlation.it/
+agcscanlation.it
 agearcade.com
 agedesseigneurs.com
 agegames.com
@@ -745,6 +744,7 @@ arcadland.com
 arcanejourneys.com
 arcanescans.com
 arcgames.com
+archiviumbar.com
 archlordgame.com
 archspace.org
 arcomage.welscotch.net
@@ -832,7 +832,6 @@ atarcade.com
 atarifreak.com
 atelier-duotang.com
 atemporal.cloud
-athenamanga.com
 athleticarcade.com
 athreascans.com
 atkgames.com
@@ -913,7 +912,7 @@ bajarjuegos.org
 bajatusjuegos.com
 bakai.org
 bakamh.com
-bakkin.moe/reader/
+bakkin.moe
 bakno.com
 baknogames.com
 baldursgateworld.com
@@ -942,7 +941,7 @@ baobua.net
 baozimh.org
 bar2ayunie.com
 barajando.com
-barbie.com/en-us/games
+barbie.com
 barbie.everythinggirl.com
 barbok.fr
 baseattackforce.com
@@ -1012,7 +1011,6 @@ begatranslation.com
 beginningaftertheend.org
 beginningaftertheendmanga.org
 beijingworldgames.info
-beinternetawesome.withgoogle.com
 belepo.coreweb.hu
 beleriand.mux.net
 bellasara.com
@@ -1421,9 +1419,7 @@ cantr.net
 caosrealm.com
 capcom.co.jp
 capcomcanada.com
-capibaratraductor.com/6ianfranc9
-capibaratraductor.com/doujinclub
-capibaratraductor.com/senshimanga
+capibaratraductor.com
 capitoons.com
 capojeux.com
 captainaruto.com
@@ -1452,7 +1448,6 @@ cartooncritters.com
 cartoondollemporium.com
 cartoonnetwork.com
 cartoonnetwork.com.br
-cartoonnetwork.com/games
 cartoonnetwork.fr
 casenoire.com
 cash-argent.com
@@ -1691,6 +1686,7 @@ comecocos.net
 cometgames-store.de
 comic-boost.com
 comic-days.com
+comic-earthstar.com
 comic-fuz.com
 comic-gardo.com
 comic-growl.com
@@ -1705,6 +1701,7 @@ comic.naver.com
 comic.pixiv.net
 comicaurora.com
 comicazen.com
+comicborder.com
 comicfury.com
 comichubfree.com
 comick.live
@@ -1982,7 +1979,7 @@ darkthrone.com
 darkwind.org
 darkwood91.free.fr
 darluok-server.com
-darpou.com/
+darpou.com
 dartagnandistribution.com
 darthsanddroids.net
 dashnet.org
@@ -2149,7 +2146,7 @@ directgamez.com
 dirt.dennis.co.uk
 discordapp.com
 diseasedproductions.net
-disney.com/games
+disney.com
 disneybahn.com
 disneyhd.tk
 disneylatino.com
@@ -2378,7 +2375,7 @@ dsrpg.ca
 dsrpg2.co.uk
 dtrjuegosgratis.com
 dtupscan.com
-dualeotruyenp.com
+dualeotruyenvh.com
 dubit.co.uk
 dubois-manchot.org
 ducklings.io
@@ -2452,7 +2449,7 @@ ecarteweb.com
 ecbarre2.net
 ecchi-doujin.com
 ece4co.vis.ne.jp
-echalk.co.uk/Maths/mathsMenu.html
+echalk.co.uk
 echecs-online.fr
 echecs.com
 echecs21.com
@@ -3099,7 +3096,6 @@ foxjeux.com
 foxkids.com
 foxtoon.com
 foxtruyen2.com
-foyscan.xyz
 fpsbanana.com
 fpt2008.com
 fr-jeux.fr
@@ -3424,12 +3420,11 @@ furcadia.com
 fureur.org
 furfaq.com
 furry-paws.com
-furyosociety.com/
+furyosociety.com
 fusionapple.com
 fussballcup.de
 fussballissimo.de
 fussballmanager.de
-futari.info
 futben.com
 futbin.com
 futchebol.com
@@ -3450,7 +3445,7 @@ g5.dk
 g60g.com
 g9g.com
 gaara-manga.fr
-gabrielecirulli.github.io/2048
+gabrielecirulli.github.io
 gadcity.com
 gadgetgamez.com
 gafeland.com
@@ -4792,7 +4787,7 @@ goauldsvstokras.xooit.com
 gobattle.io
 goblinkeeper.com
 goctruyentranh.com
-goctruyentranhvui20.com
+goctruyentranhvui21.com
 god-doujin.com
 godamh.com
 godofwar.com
@@ -4835,7 +4830,6 @@ goodgamestudios.com
 goodjeux.com
 goodsol.com
 goofcentral.tk
-google.com/site/unblockurgames
 googlefeudgame.com
 googlegames.cz
 googleminigames.com
@@ -4927,8 +4921,6 @@ groovyjava.com
 groovz.com
 gros-lots.fr
 groupme.com
-groups.google.com/d/forum/daily-web-proxies
-groups.google.com/forum/#!forum/daily-web-proxies
 grrlpowercomic.com
 grrlswrrld.com
 gry.hitz.pl
@@ -5005,6 +4997,7 @@ hackertyper.com
 hackgame.com
 hackito.zonevirtuel.com
 hadess.xyz
+hadesscans.com
 haepi.de
 hainyah.com
 hairybulletgames.com
@@ -5063,7 +5056,7 @@ harpiesbizarre.com
 harry-games.fr
 harshlands.net
 harvestopia.de
-hasbro.com/en-us
+hasbro.com
 hastelands.com
 hat-trick.net
 hatchyouregg.com
@@ -5107,7 +5100,7 @@ hentai2read.com
 hentai3z.cc
 hentai4free.net
 hentaiera.com
-hentaifantasy.it/index.php
+hentaifantasy.it
 hentaifox.com
 hentaihand.com
 hentaihere.com
@@ -5129,6 +5122,7 @@ hentaixdickgirl.com
 hentaixyuri.com
 hentaizone.xyz
 hentalk.pw
+hentara.com
 hentertainment.nl
 herna.biz
 herna.centrum.cz
@@ -5211,6 +5205,7 @@ homepageclub.org
 homestarrunner.com
 homm5.info
 honey-manga.com.ua
+honeytoon.com
 honfoglalo.hu
 hoodamath.com
 hookedgamers.com
@@ -5361,7 +5356,7 @@ ikariam.org
 ikarus-game.de
 ikspeel.nl
 ikspeelonline.nl
-ikuhentai.net/
+ikuhentai.net
 il2sturmovik-fr.com
 ilesdekorus.com
 illumina-rpg.com
@@ -5437,6 +5432,7 @@ inkapk.net
 inkazee.com
 inkr.com
 inkreads.com
+inkstory.net
 inkwellgames.com
 inmanga.com
 innogames.com
@@ -5492,7 +5488,7 @@ iplay.com
 iplay.net
 iplayallday.com
 iplaywebgames.com
-iqiyi.com/manhua
+iqiyi.com
 iqpied.com
 ironhidegames.com
 ironmangames.org
@@ -5533,8 +5529,7 @@ iwin.com
 iwon.com
 izanamiscans.my.id
 izdeguiz.com
-izneo.com/en/webtoon
-izneo.com/fr/webtoon
+izneo.com
 j46gamesonden.com
 j5.shinobi.jp
 j6.shinobi.jp
@@ -5556,7 +5551,7 @@ jamm-jamm.de
 jamochamud.org
 janaeu.nummyz.com
 janas-stern.de
-japscan.foo/mangas/?sort=popular&p=1
+japscan.foo
 jardinmagic.com
 jarkanoid.com
 jarkey.net
@@ -6926,6 +6921,7 @@ kisscartoon.se
 kissmanga.in
 kitmaker.com
 kitogames.com
+kitsuneyako.com
 kiutaku.com
 kiway.net
 kiwiarcade.com
@@ -7040,7 +7036,6 @@ kokogames.com
 kolonialkrieg.de
 komiic.com
 komikdewasa.mom
-komikgo.xyz
 komikindo.ch
 komikindo4.link
 komiksin.net
@@ -7092,13 +7087,14 @@ ksgroupscans.com
 ktics.co.kr
 kulbotjeux.com
 kumapoi.info
+kumaraw.com
 kumopoi.org
 kungfupandagame.com
 kunmanga.com
 kunmanga.online
 kuragebunch.com
 kurnik.org
-kuroimanga.com
+kuroimanga.top
 kuzeo.com
 kwikgames.com
 kyucon.com
@@ -7208,10 +7204,9 @@ legendofcamelot.forum2jeux.com
 legendrias.com
 legends-of-olympia.net
 legion-pretorienne.bbgraph.com
-legionscans.com/wp
+legionscans.com
 legitgames.com
 lego.com
-lego.com/en-us/games
 legolasgamer.com
 legrimoire.net
 leikja.net
@@ -7301,7 +7296,6 @@ lezhinus.com
 lhtranslation.net
 lianscans.com
 libeonbankiz.org
-libribar.com
 lich-king.de
 lichess.com
 lifequestgame.com.ikoula.com
@@ -7335,7 +7329,6 @@ liquidgeneration.com
 listadodejuegos.com
 little-big-snake.io
 littleshinyobjects.com
-littlexgarden.com/
 liumanhua.com
 live360.fr
 livebackgammon.de
@@ -7565,7 +7558,7 @@ manga-tr.com
 manga-tube.me
 manga-up.com
 manga.adonisfansub.com
-manga.clone-army.org/
+manga.clone-army.org
 manga.d34d.one
 manga.detectiveconanar.com
 manga.fansubs.cat
@@ -7588,10 +7581,12 @@ mangaatrend.net
 mangaball.net
 mangabats.com
 mangaberri.com
+mangabolt.com
 mangabuddy.com
 mangabuff.ru
 mangabz.com
 mangacanblog.com
+mangacloud.org
 mangaclub.ru
 mangacrab.org
 mangacrazy.net
@@ -7636,13 +7631,11 @@ mangakimi.com
 mangakings.com.tr
 mangakiss.org
 mangakita.id
-mangakoma01.com
 mangakuri.org
 mangakuro.net
 mangakusu.com
 mangalami.com
 mangalay.blogspot.com
-mangaleveling.com
 mangalib.me
 mangalivre.blog
 mangalivre.to
@@ -7662,7 +7655,6 @@ mangaowl.io
 mangapanda.onl
 mangapark.io
 mangapark.org
-mangapeak.org
 mangapill.com
 mangaplanet.com
 mangaplaza.com
@@ -7727,7 +7719,6 @@ manhatok.blogspot.com
 manhua.my
 manhua.zaimanhua.com
 manhua3q.com
-manhuaaz.com
 manhuabug.com
 manhuaes.com
 manhuafast.com
@@ -7767,7 +7758,6 @@ manhwaclan.my
 manhwaclub.net
 manhwaden.com
 manhwadesu.art
-manhwafreake.com
 manhwahana.com
 manhwahentai.me
 manhwahentai.to
@@ -7875,7 +7865,7 @@ maxjuegos.net
 maxo.cz
 maxoegames.com
 maydisle.net
-mayotune.xyz
+mayochuu.xyz
 mazaj.com
 mbin.i-p.com
 mcleodgaming.com
@@ -8002,10 +7992,10 @@ mijngame.nl
 mikoroku.my.id
 mikrokosmosfb.blogspot.com
 miku-doujin.com
-milascan.com
 milesdejuegos.com
 milftoon.xxx
 miljugadas.com
+millascan.com
 millenium-servers.com
 millenium.org
 millionsofgames.com
@@ -8443,7 +8433,6 @@ neoromcollector.net
 nerdalmighty.com
 nerdnirvana.org
 nerf.hasbro.com
-neroxus.com.br
 nes-games.de
 net-games.biz
 net-games.co.il
@@ -8528,7 +8517,6 @@ nicajuegos.com
 nicajuegos.net
 niceoppai.net
 nick.com
-nick.com/games
 nicoland.be
 nicoland.com
 nicoland.fr
@@ -8944,7 +8932,7 @@ oos.moxiecode.com
 openjuegos.com
 operation.fnaceveiletjeux.com
 operationsports.com
-opiatoon.art
+opiatoon.lat
 opqa.com
 oracleofmagic.proboards51.com
 orangefoxgames.com
@@ -9113,7 +9101,6 @@ pbm.com
 pbm.ndo.co.uk
 pbmcube.com
 pbskids.org
-pbskids.org/games
 pc-game-download.net
 pc-perso.fr
 pc.spaceinvaders.jp
@@ -9128,9 +9115,7 @@ pcgaming.ws
 pch.com
 pcjeuxblog.fr
 pczone.co.uk
-peacefmonline.com/streaming/hello
-peacefmonline.com/streaming/okay
-peacefmonline.com/streaming/win
+peacefmonline.com
 pelikone.fi
 pelit.ws
 pelitykki.com
@@ -9445,7 +9430,6 @@ pogames.org
 pogo.com
 pogosland.com
 pogosland.tk
-pointzerotoons.com
 poissonland.com
 poke53280.de
 pokebip.com
@@ -9505,7 +9489,6 @@ popsmanga.com
 poptropicaunblocked.com
 porncomix.online
 pornhwa18.com
-pornhwascans.fr
 pornjapan.jp
 pornoenseks.nl
 pornpics.com
@@ -9523,7 +9506,7 @@ portaljuegosgratis.com
 portalmania.net
 portalxd.com
 portesmonstrestresors.com
-poseidon-scans.com
+poseidon-scans.co
 positech.co.uk
 postopea.com
 postopia.com
@@ -9561,11 +9544,10 @@ probandopista.fullblog.com.ar
 prodigygame.com
 prodvahry.cz
 projectlore.com
-projectsuki.com/
+projectsuki.com
 projecttankgame.com
 projetgenesis.com
 projuegos.com
-promanga.net
 promisance.co.uk
 promu.fr
 prono-gratuit.com
@@ -9834,7 +9816,6 @@ readfreecomics.com
 readhunters.xyz
 readingtheend.com
 readmanga.cc
-readmangafree.net
 readmangas.org
 readonepiece.cc
 realapex.com
@@ -9992,6 +9973,7 @@ romstation.fr
 romulation.net
 romustrike.funnelle.com
 rondaksportal.com
+rookie.shonenjump.com
 roomescapegames247.com
 roquebergue.free.fr
 rorgames.com
@@ -10089,13 +10071,12 @@ saarland-spielbank.de
 sabgames.com
 sacrifices.forum2jeux.com
 sadeyed.com
-sadscans.com
 safaristory.com
 safervpn.com
 saga.amt-games.com
 saga.games.la
 saharavegas.com
-sai-zen-sen.jp/comics/twi4/
+sai-zen-sen.jp
 saihan.enix.org
 saikyo2dome-tbate.com
 sailmg.com
@@ -10169,7 +10150,7 @@ scorpion.startrek-rebellion.com
 scorpnabier.blogspot.com
 scory.com
 scrabble.malcolmboyd.net
-scratch.mit.edu/projects/3298856
+scratch.mit.edu
 scrawlfx.com
 screenrant.com
 sd1027.sivit.org
@@ -10203,7 +10184,6 @@ senkuro.me
 sentiersdelagloire.free.fr
 sepao.net
 seraphic-deviltry.com
-seraphmanga.com
 sereinscan.com
 serenitii.tripod.com
 serenyssime.org
@@ -10266,7 +10246,6 @@ shegame.com
 shellshock.io
 shellshockers.io
 shender4.com
-shender4.com/games
 sherestyra.de
 shermix.com
 shibamanga.com
@@ -10355,42 +10334,6 @@ site-jeux.com
 sitedegames.com
 sitejeuxdefille.com
 sitemanga.com
-sites.google.com/site/agariounblocked
-sites.google.com/site/albin19832
-sites.google.com/site/arcade56games
-sites.google.com/site/chromebookhack
-sites.google.com/site/eaglepassunblockedgames
-sites.google.com/site/fullunblockedmovies24
-sites.google.com/site/kriigames
-sites.google.com/site/laptoparcade
-sites.google.com/site/megaunblockedgames
-sites.google.com/site/millseagles
-sites.google.com/site/minimunch57games
-sites.google.com/site/minimunch57gameurls3
-sites.google.com/site/new2studyhall2/games
-sites.google.com/site/noodelcade
-sites.google.com/site/playfunblocked
-sites.google.com/site/punblockedgames
-sites.google.com/site/subgfyfs
-sites.google.com/site/unblockedadventures
-sites.google.com/site/unblockedgames1738
-sites.google.com/site/unblockedgames24h
-sites.google.com/site/unblockedgames2x
-sites.google.com/site/unblockedgames333
-sites.google.com/site/unblockedgames4me
-sites.google.com/site/unblockedgames66
-sites.google.com/site/unblockedgames77
-sites.google.com/site/unblockedgamesaz
-sites.google.com/site/unblockedgamesbeast
-sites.google.com/site/unblockedgamesbolich
-sites.google.com/site/unblockedgamescoolmath
-sites.google.com/site/unblockedgamesk10
-sites.google.com/site/unblockedgamesonlinefree
-sites.google.com/site/unblockedgamesportal
-sites.google.com/site/unblockedgamesvevo
-sites.google.com/site/unblockedgamesweebly
-sites.google.com/site/unblockedmovies1
-sites.google.com/site/unblockurgames
 sitokado.com
 six.ma
 sixteen-tons.de
@@ -10815,7 +10758,7 @@ strategyfirst.com
 strategygames123.com
 strategyinformer.com
 stratozor.com
-strayfansub.com
+strayfansub.net
 stream-it.online
 stredozem.sk
 streetchallenge.info
@@ -10987,9 +10930,6 @@ taouinchland.jexiste.fr
 tap.io
 tapas.io
 tappytoon.com
-tappytoon.com/de
-tappytoon.com/en
-tappytoon.com/fr
 tappytoon.net
 tapread.com
 taraduncan.com
@@ -11573,6 +11513,7 @@ ujeux.fr
 ukbypass.info
 ukunblock.host
 ukunblock.pw
+ulascomic01.xyz
 ulrpg.com
 ultimagame.com
 ultimate-boxing.com
@@ -11677,22 +11618,7 @@ unitopia.de
 unity3dgames.net
 universdesjeux.fr
 universdujeu.com
-universe.leagueoflegends.com/cs_cz/comic/
-universe.leagueoflegends.com/de_de/comic/
-universe.leagueoflegends.com/el_gr/comic/
-universe.leagueoflegends.com/en_us/comic/
-universe.leagueoflegends.com/es_es/comic/
-universe.leagueoflegends.com/es_mx/comic/
-universe.leagueoflegends.com/fr_fr/comic/
-universe.leagueoflegends.com/hu_hu/comic/
-universe.leagueoflegends.com/it_it/comic/
-universe.leagueoflegends.com/ja_jp/comic/
-universe.leagueoflegends.com/ko_kr/comic/
-universe.leagueoflegends.com/pl_pl/comic/
-universe.leagueoflegends.com/pt_br/comic/
-universe.leagueoflegends.com/ro_ro/comic/
-universe.leagueoflegends.com/ru_ru/comic/
-universe.leagueoflegends.com/tr_tr/comic/
+universe.leagueoflegends.com
 universflash.com
 universohentai.com
 unixy.fr
@@ -11800,7 +11726,7 @@ vfstreaming1.watch
 vgamenetwork.com
 vgchartz.com
 vgf.ca
-vgperson.com/other/mangaviewer.php
+vgperson.com
 vgreleases.com
 vicaluna.blogspot.com
 vicewars.com
@@ -11849,7 +11775,7 @@ villainto-kill.com
 villaintokill.site
 ville-virtuelle.com
 vinaarcade.com
-vinnieveritas.com/
+vinnieveritas.com
 vinted.com
 vinted.fr
 violetscans.org
@@ -11884,7 +11810,7 @@ vive-paques.com
 vivelejeu.com
 vivenoel.com
 vivezheureux.com
-vivicomi15.info
+vivicomi16.info
 vivojuegos.com
 viwawa.com
 viz.com
@@ -12005,7 +11931,7 @@ web-proxy.site
 web-schach.org
 web.icq.com
 web.sigames.com
-web.usagi.one/
+web.usagi.one
 web2mail.com
 webcomic.ohtabooks.com
 webcomicsapp.com
@@ -12214,7 +12140,6 @@ wtcraft.com
 wurmonline.com
 wurzelimperium.de
 wuxiaworld.site
-ww10.dbsmanga.com
 ww10.readblackclover.com
 ww10.readmha.com
 ww11.readnaruto.com
@@ -12223,16 +12148,11 @@ ww11.tokyoghoulre.com
 ww12.readonepiece.com
 ww2.mangafreak.me
 ww3.readsololeveling.org
-ww4.readkaguyasama.com
 ww5.readchainsawman.com
 ww5.readjujutsukaisen.com
 ww5.readkingdom.com
-ww5.readvinlandsaga.com
-ww6.readhxh.com
 ww6.readopm.com
 ww7.read7deadlysins.com
-ww7.readdrstone.com
-ww7.readneverland.com
 ww8.readfairytail.com
 ww9.readhaikyuu.com
 wwe.com
@@ -12256,7 +12176,7 @@ x3mgames.com
 x4.shinobi.jp
 x69jackass.free.fr
 xarthunter.com
-xasiat.com/albums
+xasiat.com
 xavbox.free.fr
 xavboxwii.com
 xbato.com
@@ -12310,7 +12230,7 @@ xperteleven.com
 xpertmud.sourceforge.net
 xpgamesaves.com
 xplored.com
-xrabohrok.github.io/WarMap/#/
+xrabohrok.github.io
 xs.gameshark.com
 xtaz2k.free.fr
 xtcabandonware.com
@@ -12542,7 +12462,7 @@ zombiegame.org
 zombiegamer.co.za
 zombiegames.us
 zombiemud.org
-zombiesgamesfree.com/
+zombiesgamesfree.com
 zombsroyale.io
 zona-casinos.es
 zona-d-juegos.ideal.es
